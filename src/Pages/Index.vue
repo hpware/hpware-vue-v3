@@ -73,7 +73,7 @@ onMounted (otherCoolText.value = dyothertext());
       <img
         alt="hpware"
         class="pfp"
-        src="https://utfs.io/f/CCLPSN5W2HD5ziRBkeSZ5pJYf32lWLvIK8uGb41xkHCUnXm7"
+        src="https://assets.yuanhau.com/images/index-pfp.png"
         draggable="false"
         style="margin-bottom: 0em"
       />
@@ -218,13 +218,13 @@ onMounted (otherCoolText.value = dyothertext());
           href="https://unsplash.com/photos/a-view-of-a-building-from-across-a-hedge-a8nTktTVmxI"
         >
           <img
-            src="https://images.unsplash.com/photo-1721100152646-1bbfeb581505"
+            src="https://assets.yuanhau.com/images/a-view-of-a-building-from-across-a-hedge-unspalsh.png"
             draggable="false"
           />
         </a>
         <a href="https://unsplash.com/photos/9QlTkHc6O98">
           <img
-            src="https://images.unsplash.com/photo-1710587526032-1077f7076543"
+            src="https://assets.yuanhau.com/images/a-view-of-a-parking-lot-in-taoyuan-airport-unsplash.jpg"
             draggable="false"
           />
         </a>
@@ -248,7 +248,7 @@ onMounted (otherCoolText.value = dyothertext());
   opacity: 0;
 }
 .background {
-  background-image: url("https://utfs.io/f/CCLPSN5W2HD5Hjx9nW7XEuSOswWPIZ09j31aUTe7gopyNmnk");
+  background-image: url("https://assets.yuanhau.com/images/tokyo-image-background.png");
   background-size: cover;
   border-radius: 20px;
   background-repeat: no-repeat;

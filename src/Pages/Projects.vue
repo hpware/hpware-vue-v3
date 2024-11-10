@@ -10,7 +10,7 @@ import "@/assets/main.css";
     <Project
       name="Site-V3 網站"
       ai="help"
-      repo="https://github.com/hpware/hpware-vue-v3"
+      repo="https://github.com/hpware/hpware-vue-v3-public"
       website="https://yuanh.xyz"
       about="Site-V3"
       between_projects="1"
