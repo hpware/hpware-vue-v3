@@ -4,7 +4,7 @@
 
 <template>
   <div class="a">
-    <p><i class="bi bi-megaphone-fill"></i>&nbsp;我對學校的看法 <a href="https://maps.app.goo.gl/dEphh1TJzDuDHxsG6">連結</a></p>
+    <p><i class="bi bi-megaphone-fill"></i>&nbsp;我註冊了 <a href= ‘https://retro.app/@yuanhau’>Retro App</a>!</p>
   </div>
 </template>
 <style scoped>
