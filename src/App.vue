@@ -36,23 +36,23 @@ import { RouterLink, RouterView } from "vue-router";
   </main>
   <footer>
     <br /><br />
-    <a href="/Go?l=gh" target="_blank" rel="noopener"
+    <a href="/go/gh" target="_blank" rel="noopener nofollow"
       ><i class="bi bi-github"></i></a
     >&nbsp;
-    <a href="/Go?l=ig" target="_blank" rel="noopener"
+    <a href="/go/ig" target="_blank" rel="noopener nofollow"
       ><i class="bi bi-instagram"></i></a
     >&nbsp;
-    <a href="/Go?l=th" target="_blank" rel="noopener"
+    <a href="/go/th" target="_blank" rel="noopener nofollow"
       ><i class="bi bi-threads"></i></a
     >&nbsp;
-    <a href="/Go?l=em" target="_blank" rel="noopener"
+    <a href="/go/em" target="_blank" rel="noopener nofollow"
       ><i class="bi bi-envelope"></i></a
     >&nbsp;
-    <a href="/go?l=dc" target="_blank" rel="noopener"
+    <a href="/go/dc" target="_blank" rel="noopener nofollow"
       ><i class="bi bi-discord"></i></a
     >&nbsp;
     <p>&copy; {{ new Date().getFullYear() }} 吳元皓</p>
-    <p style="font-size:0.6em;">想用Ai來掃描網站嗎? 請看<a href="/Scraper" style="font-size:1em;">這裡</a></p>
+    <p style="font-size:0.6em;">想用Ai來掃描網站嗎? 請看<a href="/Scraper" style="font-size:1em;" rel="nofollow">這裡</a></p>
   </footer>
 </template>
 

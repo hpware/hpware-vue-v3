@@ -52,13 +52,13 @@ updatename();
 const dytextabcd = abcdpicker();
 function dyothertext() {
   if (dytextabcd === "A") {
-    return "HTML is not a programming language.";
+    return "我不是IT，請不要問我IT的問題。";
   } else if (dytextabcd === "B") {
-    return "Line 很爛";
+    return "Hello World!";
   } else if (dytextabcd === "C") {
     return "I use some vim btw.";
   } else if (dytextabcd === "D") {
-    return "WebStorm is my main IDE of choice.";
+    return "VSCode or Webstorm? I can't decide.";
   }
 }
 onMounted (otherCoolText.value = dyothertext());
@@ -129,7 +129,7 @@ onMounted (otherCoolText.value = dyothertext());
             <br />當時的我沒有放入< a > 的標籤，所以不是
             HyperLink，我當時也沒想太多就繼續使用著。
             <br />但我在這一年內增加了許多HTML &
-            CSS的知識，讓我更有信心可以在學VueJS 或 ReactJS。
+            CSS的知識，讓我更有信心可以在學VueJS 或 <del>ReactJS</del> SvelteJS。
           </p>
           <h4><del>Python</del></h4>
           <p>
@@ -164,10 +164,11 @@ onMounted (otherCoolText.value = dyothertext());
           <span>Listening & Writing Score:745 (2023)</span>
           <hr />
           <h3>我想學的</h3>
-          <span>VueJS</span>&nbsp; <span>Python</span>&nbsp;
-          <span>mySQL</span>&nbsp; <span>NextJS</span>&nbsp;
-          <span>Expo</span>&nbsp; <span>Bash</span>&nbsp;
-          <span>ReactJS</span>
+          <h5 style="margin-top:0em;margin-bottom:0em;">程式語言</h5>
+          <span>Vue</span>&nbsp; <span>Python</span>&nbsp;
+          <span>mySQL</span>&nbsp;<span>Svelte</span>
+          <h5 style="margin-top:1em;margin-bottom:0em;">Linux</h5>
+          <span>Arch</span>&nbsp; <span>Fedora</span>
         </div>
       </div>
     </Transition>
@@ -177,14 +178,7 @@ onMounted (otherCoolText.value = dyothertext());
     <h3><i class="bi bi-tools"></i>&nbsp;使用的工具</h3>
     <p>網頁: VSCode, Webstorm, Vim</p>
     <p>Python: VSCode, PyCharm</p>
-    <br />
     <p>OS: Windows 11, <del>Ubuntu 24.01</del>, MacOS, Debian 12</p>
-    <p>
-      Self Host:<NavSpace /><a href="https://git.hwtw.cc">Git 伺服器 Gitea</a
-      >&nbsp; <br class="mobilei" /><a href="https://zz.yuanhau.com"
-        >檔案分享伺服器 Zipline</a
-      ><NavSpace /> <a href="https://vd.yuanhau.com">使用者調查系統 Umami</a>
-    </p>
   </section>
   <hr />
   <section id="stats" class="gitstats">

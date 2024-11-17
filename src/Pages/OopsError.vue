@@ -9,7 +9,7 @@
     你可能需要幫忙一下<br />
     <a href="/">這裡</a>應該可以幫你導覽您回去正確的道路<br />
     如果真的回不去請麻煩寄信件給我：
-    <a href="mailto:web+errorpage@yuanhau.com">web@yuanhau.com</a>
+    <a href="mailto:web+errorpage_yuanhxyz@yuanhau.com">web@yuanhau.com</a>
   </p>
 </template>
 
