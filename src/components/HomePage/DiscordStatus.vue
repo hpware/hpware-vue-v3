@@ -24,22 +24,38 @@ onMounted(async () => {
       statusColor.value = "color:#eeb132;";
       statusIcon.value = "bi-moon-fill";
       text.value = "Idle";
-    } else if (DiscordStatus.value === "dnd" ){
+    } else if (DiscordStatus.value === "dnd") {
       statusColor.value = "color:#f03f42";
       statusIcon.value = "bi-circle-fill";
       text.value = "Do not Disturb";
-    }else {
+    } else {
       statusColor.value = "color:grey";
       statusIcon.value = "bi-circle-fill";
       text.value = "Offline";
     }
-    // Activity Listening to Spotify or Playing
+    // Check if on mobile or on desktop?
+    const IsOnMobile = data.data.active_on_discord_mobile;
+    const IsOnWeb = data.data.active_on_discord_web;
+    const IsOnDesktop = data.data.active_on_discord_desktop;
+    if (IsOnDesktop === true || IsOnWeb === true) {
+
+    } else if (IsOnMobile === true) {
+      statusIcon.value = "bi-circle-fill";
+    }
+    // Activity Listening to Spotify, Playing Games or Coding
     const ActivityStatus0 = data.data.activities[0];
     if (ActivityStatus0) {
       if (ActivityStatus0.type === 0) {
-        const ActivityName = ref(ActivityStatus0.name);
-        text.value = `Playing ${ActivityName.value}`;
-        statusIcon.value = "bi-controller .fontsize1";
+        if (ActivityStatus0.name === "WebStorm" || ActivityStatus0.name === "Visual Studio Code" || ActivityStatus0.name === "PyCharm" || ActivityStatus0.name === "Code") {
+          const FileNameStatus = ref(ActivityStatus0.state);
+          const ProjectName = ref(ActivityStatus0.details);
+          text.value = `${FileNameStatus.value} ${ProjectName.value}`;
+          statusIcon.value = "bi-code-slash .fontsize1";
+        } else {
+          const ActivityName = ref(ActivityStatus0.name);
+          text.value = `Playing ${ActivityName.value}`;
+          statusIcon.value = "bi-controller .fontsize1";
+        }
       } else if (ActivityStatus0.type === 2) {
         const SpotifyCurrentlyPlayingSong = ref(ActivityStatus0.details);
         const SpotifyCurrentlyPlayingArtist = ref(ActivityStatus0.state);
