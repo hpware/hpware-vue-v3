@@ -50,7 +50,6 @@ const BusTrackAction = () => {
 <template>
   <title>控制台 | 吳元皓的網站 v3</title>
   <div class="user-page">
-    <h3>使用者控制台</h3>
     <div v-if="logged_in === 'yes'">
       <Nav />
       <h4>普通系統:</h4>
