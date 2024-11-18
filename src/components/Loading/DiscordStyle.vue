@@ -6,8 +6,8 @@ const loading = ref(null);
 onMounted(() => {
   animate(
     loading.value,
-    { rotate: 90 },
-    { type: "spring", ease: "easeInOut",repeat: Infinity, repeatDelay: 0.2 }
+    { rotate: 720},
+    { type: "spring", ease: "easeInOut",repeat: Infinity, repeatDelay: 0.3, duration: 0.8 }
   );
 });
 </script>
@@ -23,7 +23,9 @@ onMounted(() => {
   height: 100px;
   border-radius: 10px;
   background-color: transparent;
-  background-image: url("");
+  background-image: url("https://utfs.io/f/CCLPSN5W2HD5ziRBkeSZ5pJYf32lWLvIK8uGb41xkHCUnXm7");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
 }
 .center {
   display: flex;
