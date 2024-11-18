@@ -16,6 +16,9 @@ onMounted(() => {
     <!--Loading Animation-->
     <div class="loading" ref="loading"></div>
 </div>
+<br/>
+載入中...
+
 </template>
 <style scoped>
 .loading {

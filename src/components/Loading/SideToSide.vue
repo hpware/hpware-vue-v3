@@ -2,9 +2,9 @@
 import { ref, onMounted } from "vue";
 import { animate, scroll, stagger } from 'motion';
 const loading = ref(null);
-
+const dots = ref("...");
 onMounted(() => {
-    animate("li", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.5, repeat: Infinity, repeatDelay:0.5, ease: "easeInOut" });
+    animate("li", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.5, repeat: Infinity, repeatDelay:0.8, ease: "easeInOut" });
 });
 </script>
 <template>
@@ -15,10 +15,11 @@ onMounted(() => {
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
     </ul>
 </div>
 <br/>
-Loading...
+載入中{{ dots }}
 
 </template>
 <style scoped>
@@ -52,7 +53,10 @@ li {
   height: 50px;
   border-radius: 50px;
   display: block;
-  background-color: white;
+  background-color: transparent;
+  background-image: url("https://utfs.io/f/CCLPSN5W2HD5ziRBkeSZ5pJYf32lWLvIK8uGb41xkHCUnXm7");
+  background-repeat: no-repeat;
+  background-size: 200px 100px;
   opacity: 0;
   flex: 0 0 30px;
 }
