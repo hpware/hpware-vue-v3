@@ -85,7 +85,7 @@ const checkUser = (event) => {
 </template>
 
 <style scoped>
-.admin-page {
+.admin-page1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,6 @@ const checkUser = (event) => {
   background: #f0f0f0;
   background-image: url("https://images.unsplash.com/photo-1727447903891-f4a3bad38598");
   background-size: cover;
-
 }
 button {
   color: black;
