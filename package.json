@@ -1,6 +1,6 @@
 {
   "name": "hpware-vue-v3",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -37,6 +37,7 @@
     "concurrently": "^9.0.1",
     "prettier": "3.3.3",
     "unplugin-auto-import": "^0.18.3",
-    "vite": "^5.4.6"
+    "vite": "^5.4.6",
+    "vite-plugin-vue-devtools": "^7.6.4"
   }
 }
