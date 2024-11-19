@@ -6,8 +6,8 @@ const loading = ref(null);
 onMounted(() => {
   animate(
     loading.value,
-    { rotate: 720},
-    { type: "spring", ease: "easeInOut",repeat: Infinity, repeatDelay: 0.3, duration: 0.8 }
+    { rotate: 360},
+    { type: "spring", ease: "easeInOut",repeat: Infinity, repeatDelay: 1, duration: 0.8}
   );
 });
 </script>
