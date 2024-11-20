@@ -73,5 +73,5 @@ if (goLink === "ig") {
   <meta name="googlebot" content="nosnippet">
   <meta name="googlebot-news" content="nosnippet">
   <meta name="googlebot" content="notranslate">
-  <h1 id="redirect">正在幫你重新導向到 {{location}}</h1>
+  <h3 id="redirect">正在幫你重新導向到 {{location}}</h3>
 </template>
