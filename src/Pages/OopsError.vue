@@ -23,12 +23,10 @@ body {
 }
 
 h1 {
-  font-size: 3em;
   margin-bottom: 0;
 }
 
 p {
-  font-size: 1.5em;
   margin-bottom: 0;
 }
 

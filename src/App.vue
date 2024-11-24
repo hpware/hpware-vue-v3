@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
 const navmobile = ref(false);
-import Announcement from "@/components/Announcement.vue";
 import { RouterLink, RouterView } from "vue-router";
 </script>
 <template>
@@ -14,7 +13,6 @@ import { RouterLink, RouterView } from "vue-router";
         <i class="bi bi-list"></i>
       </button>
     </h1>
-    <Announcement />
     <div class="nav-mobile">
       <Transition name="fade">
         <div v-if="navmobile" style="color: rgba(191, 191, 191, 0.7)">
