@@ -4,12 +4,12 @@ import { ref, defineProps, onMounted } from 'vue'
 import { marked } from 'marked'
 import Loading from '@/components/Loading/SideToSide.vue'
 // Set vars
-const md = ref()
+const md = ref(null)
 const loading = ref(true)
 const notallowed = ref(false)
-const allow = ['yuanhau.com', 'yuanh.xyz', '0nas.yuanhau.com', 'zz.yuanhau.com']
+const allow = ['yuanhau.com', 'yuanh.xyz', '0nas.yuanhau.com/~hw/', 'zz.yuanhau.com']
 // URL
-const h = new URLSearchParams(window.location.search).get('h')
+let h = new URLSearchParams(window.location.search).get('h')
 if (!h) {
     notallowed.value = true
 } else if (h === '0nas' || h === '0nas.yuanhau.com') {
@@ -18,10 +18,9 @@ if (!h) {
 const File = new URLSearchParams(window.location.search).get('f');
 async function fetchFile() {
     try {
-        const fr = await fetch(`${h}/${File}.md`)
+        const fr = await fetch(`https://${h}/${File}.md`)
         if (!fr.ok) {
             throw new Error('Network response was not ok')
-            notallowed.value = true
         }
         const text = await fr.text()
         md.value = marked(text)
@@ -32,7 +31,7 @@ async function fetchFile() {
         loading.value = false
     }
 }
-if (h in allow) {
+if (allow.includes(h)) {
     onMounted(() => {
         fetchFile()
     })            
