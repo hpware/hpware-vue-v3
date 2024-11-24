@@ -1,7 +1,7 @@
 #### Web
 小時候是我就喜歡用電腦，但我當時一點程式都不會寫。
 
-我2020年時剛開始想要並使用自己的Wordpress的部落格 https://hwweb.i234.me/wordpress， 但Synology 不讓我把Wordpress放在 Website Root裡面，所以我決定要改預設的檔案來讓使用者到部落格。
+我2020年時剛開始想要並使用自己的Wordpress的部落格 https://hwweb.i234.me/wordpress ， 但Synology 不讓我把Wordpress放在 Website Root裡面，所以我決定要改預設的檔案來讓使用者到部落格。
 
 最近我在Github上發現在我的舊帳號上有一個備份 [repo:thehwtw/wncx](https://github.com/thehwtw/wncx) [網站 (Page Archive)](https://old-hwweb-website.pages.dev/)
 
