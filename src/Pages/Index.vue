@@ -64,9 +64,9 @@ function dyothertext() {
 onMounted (otherCoolText.value = dyothertext());
 </script>
 <template>
-  <title>首頁 | 吳元皓的網站 v3</title>
-  <meta property="og:title" content="首頁 | 吳元皓的網站 v3" />
-  <meta property="og:site_name" content="首頁 | 吳元皓的網站 v3" />
+  <title>首頁 | 吳元皓</title>
+  <meta property="og:title" content="首頁 | 吳元皓" />
+  <meta property="og:site_name" content="首頁 | 吳元皓" />
   <div class="background">
     <section id="aboutme" class="about">
       <br />

@@ -51,7 +51,7 @@ const checkUser = (event) => {
 </script>
 
 <template>
-  <title>使用者 & 管理員登入系統 | 吳元皓的網站 v3</title>
+  <title>使用者 & 管理員登入系統 | 吳元皓</title>
   <div class="admin-page">
     <div class="logincool">
     <div v-if="login === 'no'" class="login-form">

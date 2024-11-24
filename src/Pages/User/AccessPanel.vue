@@ -48,7 +48,7 @@ const BusTrackAction = () => {
 </script>
 
 <template>
-  <title>控制台 | 吳元皓的網站 v3</title>
+  <title>控制台 | 吳元皓</title>
   <div class="user-page">
     <h3>使用者控制台</h3>
     <div v-if="logged_in === 'yes'">

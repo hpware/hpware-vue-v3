@@ -17,7 +17,7 @@ if (!user_account) {
 </script>
 
 <template>
-  <title>公車追蹤 | 吳元皓的網站 v3</title>
+  <title>公車追蹤 | 吳元皓</title>
   <div v-if="user_account">
     <Nav />
   <div>

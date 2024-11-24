@@ -37,7 +37,7 @@ if (true) {
 </script>
 
 <template>
-  <title>使用者 & 管理員登入系統 | 吳元皓的網站 v3</title>
+  <title>使用者 & 管理員登入系統 | 吳元皓</title>
   <div class="admin-page">
     <div v-if="login === 'no'">
       <p>使用者 & 管理員登入系統</p>

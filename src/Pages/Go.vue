@@ -68,7 +68,7 @@ if (goLink === "ig") {
 }
 </script>
 <template>
-  <title>重新導向到 {{location}} | 吳元皓的網站 v3</title>
+  <title>重新導向到 {{location}} | 吳元皓</title>
   <meta name="robots" content="noindex nofollow">
   <meta name="googlebot" content="nosnippet">
   <meta name="googlebot-news" content="nosnippet">

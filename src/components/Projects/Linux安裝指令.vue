@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <title>Linux 安裝指令 | 吳元皓的網站 v3</title>
+  <title>Linux 安裝指令 | 吳元皓</title>
   <h3>Linux 安裝指令</h3>
   <p>
     Ubuntu 24.04 + Gnome<br />

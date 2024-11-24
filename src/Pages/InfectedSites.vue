@@ -3,7 +3,7 @@ import ist from "@/components/Templates/InfectedSitesTemplate.vue";
 </script>
 
 <template>
-  <title>已中毒網站與網頁 | 吳元皓的網站 v3</title>
+  <title>已中毒網站與網頁 | 吳元皓</title>
   <h2>已中毒網站與網頁</h2>
   <ist
     name="blog.howardwu.tk"

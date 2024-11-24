@@ -23,5 +23,5 @@ if (pages[page_content]) {
   <div class="aboutthisproject" id="project">
     <component :is="component"></component>
   </div>
-  <title>關於這個機器人 | 吳元皓的網站 v3</title>
+  <title>關於這個機器人 | 吳元皓</title>
 </template>

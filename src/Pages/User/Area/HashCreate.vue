@@ -31,7 +31,7 @@ const copyhash = () => {
 };
 </script>
 <template>
-  <title>Hash 產生 | 吳元皓的網站 v3</title>
+  <title>Hash 產生 | 吳元皓</title>
   <div v-if="user_account">
     <Nav />
     <h4 style="margin-bottom: 1em">更改密碼</h4>

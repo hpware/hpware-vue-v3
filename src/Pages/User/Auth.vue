@@ -17,7 +17,7 @@ const onCaptchaVerified = (token) => {
 </script>
 
 <template>
-  <title>登入系統 | 吳元皓的網站 v3</title>
+  <title>登入系統 | 吳元皓</title>
 
 </template>
 

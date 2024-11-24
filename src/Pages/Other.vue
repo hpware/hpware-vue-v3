@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <title>其他 | 吳元皓的網站 v3</title>
+  <title>其他 | 吳元皓</title>
   <h2>其他</h2>
   <p>
     <RouterLink to="/user/login">登入</RouterLink><br />

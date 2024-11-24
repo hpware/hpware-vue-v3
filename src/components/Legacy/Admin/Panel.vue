@@ -48,7 +48,7 @@ const logoutAction = () => {
 </script>
 
 <template>
-  <title>管理員控制台 | 吳元皓的網站 v3</title>
+  <title>管理員控制台 | 吳元皓</title>
   <div class="admin-page">
     <h3>管理員控制台</h3>
     <div v-if="logged_in === 'yes'">

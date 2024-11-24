@@ -3,7 +3,7 @@ import Project from "@/components/Templates/ProjectDisplayTemplate.vue";
 import "@/assets/main.css";
 </script>
 <template>
-  <title>專案 | 吳元皓的網站 v3</title>
+  <title>專案 | 吳元皓</title>
   <h2 class="pagetitle">所有專案</h2>
   <section id="current">
     <h3>現在開發、更新中的專案</h3>

@@ -63,7 +63,7 @@ const changePasswordAction = () => {
 </script>
 
 <template>
-  <title>管理員登入重新導向 | 吳元皓的網站 v3</title>
+  <title>管理員登入重新導向 | 吳元皓</title>
   <meta http-equiv="refresh" content="0;url=/user/login?ref=old-admin" />
   <div class="admin-page">
     <h3>管理員系統</h3>
