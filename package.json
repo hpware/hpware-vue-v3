@@ -1,6 +1,6 @@
 {
   "name": "hpware-vue-v3",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -18,14 +18,17 @@
     "crypto-js": "^4.2.0",
     "express": "^4.21.1",
     "marked": "^15.0.2",
+    "motion": "^11.11.17",
     "passport": "^0.7.0",
     "passport-github": "^1.1.0",
     "passport-github2": "^0.1.12",
     "posthog-js": "^1.163.0",
     "supertokens-web-js": "^0.13.0",
+    "three": "^0.170.0",
     "typewriter-vue": "^0.5.19",
     "vue": "^3.4.29",
     "vue-cookie": "^1.1.4",
+    "vue-loading-overlay": "^6.0.6",
     "vue-meta": "^2.4.0",
     "vue-router": "^4.3.3"
   },
@@ -35,6 +38,7 @@
     "concurrently": "^9.0.1",
     "prettier": "3.3.3",
     "unplugin-auto-import": "^0.18.3",
-    "vite": "^5.4.6"
+    "vite": "^5.4.6",
+    "vite-plugin-vue-devtools": "^7.6.4"
   }
 }

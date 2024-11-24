@@ -10,6 +10,7 @@ import VueHcaptcha from "@hcaptcha/vue3-hcaptcha";
 import NavSpace from "@/components/Other/NavSpace.vue";
 import Nav from "@/components/UserPanel/Nav.vue";
 import Error from "@/components/UserPanel/Error.vue";
+import Loading from "@/components/Loading/SideToSide.vue";
 
 // Ref Logout
 
@@ -31,7 +32,7 @@ const onCaptchaVerified = (token) => {
 
 // Check Login Creds
 if (cookie.get("admin-login") === `yes_${{ cookieUSERNAME }}`) {
-  window.location.href = "/user/accesspanel";
+  window.location.href = "/user/login";
 }
 const checkUser = (event) => {
   event.preventDefault();
@@ -77,13 +78,14 @@ const checkUser = (event) => {
       <Error />
     </div>
     <div v-if="login === 'yes'">
-      <meta http-equiv="refresh" content="0;url=/user/accesspanel" />
+      <Loading />
+      <meta http-equiv="refresh" content="3;url=/user/accesspanel" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.admin-page {
+.admin-page1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +93,6 @@ const checkUser = (event) => {
   background: #f0f0f0;
   background-image: url("https://images.unsplash.com/photo-1727447903891-f4a3bad38598");
   background-size: cover;
-
 }
 button {
   color: black;

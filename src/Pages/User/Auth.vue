@@ -18,7 +18,11 @@ const onCaptchaVerified = (token) => {
 
 <template>
   <title>登入系統 | 吳元皓</title>
-
+  <div class="app">
+    <form>
+      <p for="user"></p>
+    </form>
+  </div>
 </template>
 
 <style scoped>

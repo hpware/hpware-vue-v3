@@ -1,11 +1,7 @@
 <script setup></script>
 
 <template>
-  <h2>This action is logged. jk</h2>
-  <h3>
-    Anyway, the source code is <RouterLink to="/Go?l=gh-repo">Here</RouterLink>.
-  </h3>
-  <p>Since you are here, you can also email me. web@yuanhau.com</p>
+  <h2>hpware-vue-v3 的程式碼已變成非公開!</h2>
   <p>:wq! 你在找什麼.vue</p>
 </template>
 

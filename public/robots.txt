@@ -46,9 +46,11 @@ Disallow: /Test/
 Disallow: /.git/
 Disallow: /你在找什麼
 Disallow: /No-Source-Code
-Disallow: /Go
+Disallow: /go/
+Disallow: /go
 Disallow: /Beta/
 Disallow: /admin
 Disallow: /user/
+Disallow: /BlogList.txt
 
 Sitemap: https://yuanh.xyz/sitemap.xml
