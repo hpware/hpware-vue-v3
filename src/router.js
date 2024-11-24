@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import PostPage from "@/Pages/Post.vue";
 
 const pages = import.meta.glob("@/Pages/**/*.vue");
 
@@ -57,6 +58,11 @@ routes.push(
       const { params } = to;
       return `/About/Github-Org?page=${params.pathMatch}`
     }
+  },
+  {
+    path: `/post/:name`,
+    component: PostPage,
+    props: true,
   },
   {
     path: "/:pathMatch(.*)*",

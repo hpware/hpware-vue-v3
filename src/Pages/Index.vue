@@ -3,11 +3,21 @@
 import NavSpace from "@/components/Other/NavSpace.vue";
 import { ref, onMounted } from "vue";
 import DiscordStatus from "@/components/HomePage/DiscordStatus.vue";
+import { marked } from "marked";
 // Ref
 const moreAbout = ref(false);
 const handPickedImages = ref(false);
 const name = ref("Default Name");
 const otherCoolText = ref("Default Text");
+const codinghistory = ref();
+
+// Coding History List
+async function getCodingHistoryMD() {
+  const mdfile = await fetch("/mds/history.md");
+  const mdtext = await mdfile.text();
+  codinghistory.value = marked(mdtext);
+}
+getCodingHistoryMD();
 // Picker
 function abcdpicker() {
   const randomValue = Math.random();
@@ -52,13 +62,13 @@ updatename();
 const dytextabcd = abcdpicker();
 function dyothertext() {
   if (dytextabcd === "A") {
-    return "我不是IT，請不要問我IT的問題。";
+    return "";
   } else if (dytextabcd === "B") {
-    return "Hello World!";
+    return "print('Hello World!')";
   } else if (dytextabcd === "C") {
     return "I use some vim btw.";
   } else if (dytextabcd === "D") {
-    return "VSCode or Webstorm? I can't decide.";
+    return "";
   }
 }
 onMounted (otherCoolText.value = dyothertext());
@@ -93,11 +103,11 @@ onMounted (otherCoolText.value = dyothertext());
       <h3>
           <a class="not-a-button profilebutton" @click="moreAbout = !moreAbout"
           >更多資訊</a
-        > | <RouterLink
-          to="/projects"
+        > | <a
+          href="/projects"
           style="text-decoration: none"
           class="not-a-button profilebutton"
-          >我的專案</RouterLink
+          >我的專案</a
         >
       </h3>
       <div v-if="moreAbout" id="moreabout">
@@ -112,75 +122,18 @@ onMounted (otherCoolText.value = dyothertext());
   <section id="moreabout">
     <Transition name="fade">
       <div v-if="moreAbout" class="experience">
-        <div class="experience1">
-          <h4>Web</h4>
-          <p>
-            小時候是我就喜歡用電腦，但我當時一點程式都不會寫。<br />
-            我2020年時剛開始想要並使用自己的Wordpress的部落格
-            <a href="https://hwweb.i234.me/wordpress">hwweb.i234.me/wordpress</a
-            >， <br />但Synology 不讓我把Wordpress放在 Website Root
-            裡面，所以我決定要改預設的檔案來讓使用者到部落格。
-            <br />在Github上發現在我的舊帳號上有一個備份
-            <a href="https://github.com/thehwtw/wncx">repo:thehwtw/wncx</a
-            >&nbsp;
-            <a href="https://old-hwweb-website.pages.dev/"
-              >網站 (Page Archive)</a
-            >
-            <br />當時的我沒有放入< a > 的標籤，所以不是
-            HyperLink，我當時也沒想太多就繼續使用著。
-            <br />但我在這一年內增加了許多HTML &
-            CSS的知識，讓我更有信心可以在學VueJS 或 <del>ReactJS</del> SvelteJS。
-          </p>
-          <h4><del>Python</del></h4>
-          <p>
-            我也在國中一年級時開始學習Python，這個也是我想學的語言，但我教學影片只看但10％的地方就放棄了。
-            <br />黑歷史: <a href="https://github.com/thehwtw/hwpythontest1">舊py程式</a>
-            <br />我也之後大多數都忘記了，連 if else
-            每次都要查一下，因為我比較習慣用 JavaScript 的方式 if {} else if {}
-            else {}。
-          </p>
-          <h4>IT</h4>
-          <p>
-            我在2019年時，發現2018年買的NAS可以放虛擬機器，剛開始只是跑 Windows
-            7 而已，<br />
-            但一段時間後我發現Linux，我也開始學一點Debain Cli
-            (Ubuntu)來安裝服務。<br />
-            主要學習的是 Nginx， Nginx 是一個比較 Flexible 的 Web Server，<br />
-            最近也開始學一點 PHP 主要為簡單的<a
-              href="https://github.com/hpware/php-plugins"
-              >插件</a
-            ><br />
-            也終於學會如何安裝 PHP 與 Nginx，但我還是不會用 Composer。<br />
-            我也對 Windows Server IIS 也有一點經驗，主要的原因是我在 Windows
-            Server 2022 IIS 10.0 上讓我的爛網站跑起來，但最後還是跑回 Vercel
-            了。
-          </p>
-          <hr />
-          <h3>檢定通過</h3>
-          <p>GEPT</p>
-          <span>初級 (2021)</span><br />
-          <span>中級聽讀 (2022)</span>
-          <p>TOEIC</p>
-          <span>Listening & Writing Score:745 (2023)</span>
-          <hr />
-          <h3>我想學的</h3>
-          <h5 style="margin-top:0em;margin-bottom:0em;">程式語言</h5>
-          <span>Vue</span>&nbsp; <span>Python</span>&nbsp;
-          <span>mySQL</span>&nbsp;<span>Svelte</span>
-          <h5 style="margin-top:1em;margin-bottom:0em;">Linux</h5>
-          <span>Arch</span>&nbsp; <span>Fedora</span>
-        </div>
+          <div v-ref="codinghistory" v-html="codinghistory"></div>
       </div>
     </Transition>
   </section>
   <hr />
-  <section id="tools">
+  <!--<section id="tools">
     <h3><i class="bi bi-tools"></i>&nbsp;使用的工具</h3>
     <p>網頁: VSCode, Webstorm, Vim</p>
     <p>Python: VSCode, PyCharm</p>
     <p>OS: Windows 11, <del>Ubuntu 24.01</del>, MacOS, Debian 12</p>
   </section>
-  <hr />
+  <hr />-->
   <section id="stats" class="gitstats">
     <h3>GitHub 資料</h3>
     <img
@@ -197,17 +150,9 @@ onMounted (otherCoolText.value = dyothertext());
   <hr />
   <section id="photo">
     <h3>攝影</h3>
-    <p>我喜歡拍照(但沒拍很好)</p>
-    <a href="https://unsplash.com/@hwtw" target="blank" style="color: white"
-      >Unsplash</a
-    >&nbsp;<a
-      @click="handPickedImages = !handPickedImages"
-      style="color: white"
-      class="not-a-button"
-      ><u>我的照片</u></a
-    >
+    <p>我喜歡拍照(但沒有拍很好)</p>
     <Transition name="fade">
-      <div class="photolist" v-if="handPickedImages">
+      <div class="photolist">
         <a
           href="https://unsplash.com/photos/a-view-of-a-building-from-across-a-hedge-a8nTktTVmxI"
         >
@@ -326,11 +271,6 @@ div.experience {
   to {
     transform: scale(0.5);
   }
-}
-div.experience1 {
-  backdrop-filter: blur(10px);
-  padding: 1em;
-  border-radius: 5px;
 }
 .not-a-button {
   background-color: transparent;
