@@ -1,7 +1,7 @@
 <script setup>
 import GetMD from '@/components/GetMD.js'
 
-GetMD('/mds/other/otherthings.md');
+const md = GetMD('/mds/other/otherthings.md');
 </script>
 
 <template>

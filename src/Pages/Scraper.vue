@@ -1,7 +1,7 @@
 <script setup>
-import Getmd from '@/components/GetMD.js'
+import GetMD from '@/components/GetMD.js'
 
-GetMD('/mds/other/scraper.md');
+const md = GetMD('/mds/other/scrape.md');
 </script>
 
 <template>
