@@ -13,11 +13,11 @@ const codinghistory = ref();
 
 // Coding History List
 async function getCodingHistoryMD() {
+  console.log("getCodingHistoryMD");
   const mdfile = await fetch("/mds/history.md");
   const mdtext = await mdfile.text();
   codinghistory.value = marked(mdtext);
 }
-getCodingHistoryMD();
 // Picker
 function abcdpicker() {
   const randomValue = Math.random();
@@ -72,11 +72,16 @@ function dyothertext() {
   }
 }
 onMounted (otherCoolText.value = dyothertext());
+if (codinghistory) {
+  getCodingHistoryMD();
+}
 </script>
 <template>
   <title>首頁 | 吳元皓</title>
   <meta property="og:title" content="首頁 | 吳元皓" />
   <meta property="og:site_name" content="首頁 | 吳元皓" />
+  <link rel="prefetch" href="https://utfs.io/f/CCLPSN5W2HD5ziRBkeSZ5pJYf32lWLvIK8uGb41xkHCUnXm7" />
+  <link rel="dns-prefetch" href="https://blogge.yuanh.xyz/" />
   <div class="background">
     <section id="aboutme" class="about">
       <br />
