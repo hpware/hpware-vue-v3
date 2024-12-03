@@ -1,6 +1,6 @@
 <script setup>
 // Setup Imports
-import Loading from '@/components/Loading/SideToSide.vue'
+import Loading from '@/components/Loading/DiscordStyle.vue'
 import OopsError from '@/Pages/OopsError.vue'
 import { marked } from "marked";
 import { ref, defineProps } from "vue";
@@ -15,7 +15,7 @@ const props = defineProps({
 // Fetch the post
 async function fetchPost() {
     try {
-        const response = await fetch(`/mds/posts/${props.name}.md`);
+        const response = await fetch(`https://blogge.yuanh.xyz/posts/${props.name}.md`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -25,7 +25,9 @@ async function fetchPost() {
         console.error('Error fetching the post:', error);
         post.value = 'Error loading post.';
     } finally {
-        loading.value = false;
+        setTimeout = setTimeout(() => {
+            loading.value = false;
+        }, 2500);
     }
 }
 // onMounted
