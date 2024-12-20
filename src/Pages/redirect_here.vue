@@ -1,8 +1,8 @@
 <script setup>
-  const goLink = new URL(window.location.href).SearchParams.get("go");
+  const goLink = new URL(window.location.href).SearchParams.get("go") || 'https://yuanhau.com';
   setTimeOut(() => {
       window.location.href = goLink;
-  }, 3000)
+  }, 3000);
 </script>
 <template>
   <div>
