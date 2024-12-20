@@ -1,5 +1,5 @@
 <script setup>
-  const goLink = new URL(window.location.href).searchParams.get("go") || 'https://yuanhau.com';
+  const goLink = new URL(window.location.href).searchParams.get("go") || 'https://wp.yuanhau.com';
   setTimeout(() => {
       window.location.href = goLink;
   }, 3000);
