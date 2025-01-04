@@ -17,7 +17,7 @@
     "cookies": "^0.9.1",
     "crypto-js": "^4.2.0",
     "dompurify": "^3.2.1",
-    "express": "^4.21.1",
+    "express": "^4.21.2",
     "marked": "^15.0.2",
     "motion": "^11.11.17",
     "passport": "^0.7.0",
