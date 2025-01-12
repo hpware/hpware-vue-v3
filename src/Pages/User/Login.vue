@@ -61,7 +61,7 @@ const checkUser = (event) => {
       <form @submit="checkUser">
         <label for="username">使用者</label><br />
         <input type="text" id="username" v-model="username" required /><br />
-        <label for="password">&nbsp;密碼</label><br />
+        <label for="password">密碼</label><br />
         <input type="password" v-model="pwd" required />
         <br />
         <vue-hcaptcha
