@@ -6,7 +6,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import * as Sentry from "@sentry/vue";
-import posthog from "./posthog";
+//import posthog from "./posthog";
 
 const app = createApp(App);
 
@@ -33,6 +33,6 @@ console.log(
   "%c這個功能是給網站開發者使用，請不要在這裡複製任何代碼。\n",
   "font-size: 20px; font-weight: bold; color: red;",
 );
-app.use(posthog);
+//app.use(posthog);
 app.use(router);
 app.mount("#app");
